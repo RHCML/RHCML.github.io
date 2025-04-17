@@ -138,12 +138,9 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
 /* Force bullets to show within <ul> elements on the page */
 body ul {
     list-style-type: disc !important; /* Ensure bullets are shown */
-    padding-left: 20px; /* Optional: Add some left padding to create space for the bullets */
-    margin: 24px auto; /* Optional: Adjust margins if needed */
 }
 
 /* Ensure <li> items have bullet styling */
 body ul li {
     list-style-type: disc !important; /* Force bullets on each list item */
-    margin-left: 0; /* Reset any margin that could affect the layout */
 }
