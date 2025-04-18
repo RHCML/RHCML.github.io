@@ -155,5 +155,25 @@ If you are interested in submitting but are unsure whether your work aligns with
         &nbsp;|&nbsp; Design by <a href="https://github.com/mikepierce">Mike Pierce</a>
     </footer>
 
+<script>
+    // Get all collapsible elements
+    var coll = document.getElementsByClassName("collapsible");
+    
+    // Loop through all collapsible elements and add event listeners for the click event
+    for (var i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            // Toggle the "active" class to change the button style
+            this.classList.toggle("active");
+            
+            // Toggle the display of the corresponding content section
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
 </body>
 </html>
