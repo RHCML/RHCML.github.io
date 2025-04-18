@@ -60,7 +60,10 @@
     or withdrawn submissions will be kept confidential. Accepted papers are eligible for publication in a joint Post-Workshop proceedings published by Springer Communications in Computer and Information Science.
     </p>
 
-    <button class="collapsible"><h3>Submission Formats</h3></button>
+    <button class="collapsible">
+            <span class="title"><h3>Submission Formats</h3></span>
+            <span class="icon">+</span> 
+    </button>
     <div class="content">  
     <ul style="list-style-type: disc;">
     <li>Full papers: Suitable for novel contributions. Must include results of analyses based on real-world data (preferably) or simulated quantiative data. The maximum length of papers is 16 pages (including references) in this format. </li>
@@ -169,11 +172,59 @@ If you are interested in submitting but are unsure whether your work aligns with
             var content = this.nextElementSibling;
             if (content.style.display === "block") {
                 content.style.display = "none";
+                // Change the button text back to "+"
+                this.getElementsByClassName("icon")[0].innerHTML = "+"; 
             } else {
                 content.style.display = "block";
+                // Change the button text to "-"
+                this.getElementsByClassName("icon")[0].innerHTML = "-"; 
             }
         });
     }
 </script>
+
+<style>
+    /* Style for the collapsible button */
+    .collapsible {
+        background-color: #f1f1f1;
+        color: #444;
+        cursor: pointer;
+        padding: 10px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 16px;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between; /* Ensure title and icon are spaced out */
+        align-items: center;
+    }
+
+    /* Change the background color when the collapsible is clicked */
+    .collapsible.active {
+        background-color: #ddd;
+    }
+
+    /* Style for the collapsible content */
+    .content {
+        padding: 10px 20px;
+        display: none;
+        background-color: #f9f9f9;
+        border-left: 2px solid #ddd;
+    }
+
+    /* Style for the title (left-aligned) */
+    .collapsible .title {
+        text-align: left;
+    }
+
+    /* Style for the icon (right-aligned) */
+    .collapsible .icon {
+        text-align: right;
+        width: 30px; /* Ensure enough space for the icon */
+    }
+</style>
+
 </body>
 </html>
