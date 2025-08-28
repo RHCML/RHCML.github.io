@@ -13,40 +13,103 @@
     <meta name="KeyWords" content="Conference">
     <title>Program | RHCML 2025</title>
     <style>
-        .papers-list {
-            list-style: none;
-            padding: 0;
+        .program-schedule {
+            margin: 20px 0;
         }
         
-        .paper-item {
-            margin-bottom: 20px;
-            padding: 15px;
-            border-left: 3px solid #333;
-            background-color: #f8f9fa;
+        .session {
+            margin-bottom: 30px;
+            border-left: 4px solid #333;
+            padding-left: 20px;
         }
         
-        .paper-id {
+        .session-time {
             font-weight: bold;
-            font-size: 14px;
-            margin-bottom: 8px;
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
         }
         
-        .paper-title {
+        .session-title {
             font-size: 16px;
             font-weight: bold;
             margin-bottom: 10px;
-            line-height: 1.4;
+        }
+        
+        .session-details {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-left: 20px;
+        }
+        
+        .keynote-speaker {
+            font-weight: bold;
+            color: #0066cc;
+        }
+        
+        .paper-presentation {
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+        
+        .paper-title {
+            font-weight: bold;
+            margin-bottom: 5px;
         }
         
         .paper-authors {
             font-style: italic;
-            font-size: 14px;
+            font-size: 13px;
+            color: #666;
         }
         
-        .note {
-            margin-top: 20px;
-            font-size: 14px;
+        .coffee-break {
+            background-color: #e8f4f8;
+            border-left-color: #0066cc;
+        }
+        
+        .papers-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 15px;
+        }
+        
+        .paper-item {
+            margin-bottom: 15px;
+            padding: 12px;
+            border-left: 3px solid #666;
+            background-color: #f8f9fa;
+            border-radius: 3px;
+        }
+        
+        .paper-id {
+            font-weight: bold;
+            font-size: 12px;
+            margin-bottom: 5px;
             color: #666;
+        }
+        
+        .poster-paper-title {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        
+        .poster-paper-authors {
+            font-style: italic;
+            font-size: 12px;
+        }
+        
+        .section-header {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 30px 0 15px 0;
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
         }
     </style>
 </head>
@@ -64,7 +127,7 @@
     <table class="navigation">
         <tr>
             <td class="navigation">
-                <a class="current" title="Workshop Home Page" href=".">Home</a>
+                <a title="Workshop Home Page" href=".">Home</a>
             </td>
             <td class="navigation">
                 <a title="Attending the Workshop" href="attending">Attending</a>
@@ -73,85 +136,138 @@
                 <a title="Call for Papers" href="cfp">CFP</a>
             </td>
             <td class="navigation">
-                <a title="Workshop Program" href="program">Program</a> 
+                <a class="current" title="Workshop Program" href="program">Program</a> 
             </td>
             <td class="navigation">
                 <a title="Committees" href="committees">Committees</a>
             </td>
         </tr>
     </table>
-    
-     <p><h3>Accepted Papers</h3></p>
-    
-    <ul class="papers-list">
-        <li class="paper-item">
-            <div class="paper-id">Paper ID: 22</div>
-            <div class="paper-title">MedFusion-LM: Explainable Large Language Model for Transforming Medical Outcomes in Federated Learning with Neural Architecture Search Blueprints</div>
-            <div class="paper-authors">Diogen Babuc*; Teodor-Florin Fortiş</div>
-        </li>
-        
-        <li class="paper-item">
-            <div class="paper-id">Paper ID: 84</div>
-            <div class="paper-title">DBSCAN clustering applied to electronic health records' data from patients with glioblastoma</div>
-            <div class="paper-authors">Davide Chicco*; Luca Oneto</div>
-        </li>
-        
-        <li class="paper-item">
-            <div class="paper-id">Paper ID: 310</div>
-            <div class="paper-title">Positive-Unlabeled Learning for User-Centred XAI: a Case Study in Healthcare</div>
-            <div class="paper-authors">Iris Heerlien*; Selin Çolakhasanoglu; Jeroen Linssen</div>
-        </li>
-        
-        <li class="paper-item">
-            <div class="paper-id">Paper ID: 337</div>
-            <div class="paper-title">Challenges in Explaining Pretrained Clinical Text Classifiers</div>
-            <div class="paper-authors">Kristian Miok*; Matej Klemen; Blaz Skrlj; Marko Robnik-Sikonja</div>
-        </li>
-        
-        <li class="paper-item">
-            <div class="paper-id">Paper ID: 339</div>
-            <div class="paper-title">Privacy-Preserving AI-based Glaucoma Referral using Multi-Centric Real-World Data: A Feasibility study</div>
-            <div class="paper-authors">Filipe Soares*; Telmo Barbosa; João Barbosa-Breda; Luís Abegão Pinto; Carlos Marques-Neves</div>
-        </li>
-        
-        <li class="paper-item">
-            <div class="paper-id">Paper ID: 347</div>
-            <div class="paper-title">Gender Prediction from Polish Ethnicity Fundus Images using Foundation Model</div>
-            <div class="paper-authors">Paweł Niedziółka*; Paweł Zyblewski; Andrzej Grzybowski; Michał Woźniak</div>
-        </li>
-        
-        <li class="paper-item">
-            <div class="paper-id">Paper ID: 350</div>
-            <div class="paper-title">Voices Between Lines: Interpretable Labeling of Mental Health Minority Topics with Seed Guidance and LLMs</div>
-            <div class="paper-authors">Seyedeh Fatemeh Ebrahimi*; Jaakko Peltonen</div>
-        </li>
-        
-        <li class="paper-item">
-            <div class="paper-id">Paper ID: 432</div>
-            <div class="paper-title">A Comparative Study on the Responsible Use of Public LLMs for Self-Diagnosis</div>
-            <div class="paper-authors">Nikil Sharan Prabahar Balasubramanian, Sagnik Dakshit*</div>
-        </li>
-        
-        <li class="paper-item">
-            <div class="paper-id">Paper ID: 436</div>
-            <div class="paper-title">A Privacy-Centric Approach: Scalable and Secure Federated Learning Enabled by Hybrid Homomorphic Encryption</div>
-            <div class="paper-authors">Khoa Nguyen; Tanveer Khan*; Antonis Michalas</div>
-        </li>
-        
-        <li class="paper-item">
-            <div class="paper-id">Paper ID: 438</div>
-            <div class="paper-title">Characterizing Publicly Available Tabular Health Data Sets for Responsible Machine Learning</div>
-            <div class="paper-authors">Mariana Oliveira*; Carlos Soares</div>
-        </li>
-    </ul>
-        
-        <div class="note">
-            * indicates corresponding authors
+
+    <div class="program-schedule">
+        <h2>Workshop Program</h2>
+        <p><strong>Date:</strong> September 19, 2025<br>
+        <strong>Time:</strong> 9:00 AM - 1:00 PM<br>
+        <strong>Location:</strong> Porto, Portugal (co-located with ECML PKDD)</p>
+
+        <div class="session">
+            <div class="session-time">9:00 - 9:05</div>
+            <div class="session-title">Opening Remarks</div>
         </div>
-   
-    <footer>
-        &copy; Workshop Organizers
-        &nbsp;|&nbsp; Design by <a href="https://github.com/mikepierce">Mike Pierce</a>
-    </footer>
+
+        <div class="session">
+            <div class="session-time">9:05 - 9:45</div>
+            <div class="session-title">Keynote 1</div>
+            <div class="session-details">
+                <span class="keynote-speaker">Prof. John D. Piette</span><br>
+                Professor Emeritus, Health Behavior and Health Equity<br>
+                VA Senior Career Scientist, University of Michigan<br>
+                <a href="https://sph.umich.edu/faculty-profiles/piette-john.html" target="_blank">Faculty Profile</a>
+            </div>
+        </div>
+
+        <div class="session">
+            <div class="session-time">9:45 - 10:30</div>
+            <div class="session-title">Paper Presentations (Session 1)</div>
+            <div class="session-details">
+                <div class="paper-presentation">
+                    <div class="paper-title">MedFusion-LM: Explainable Large Language Model for Transforming Medical Outcomes in Federated Learning with Neural Architecture Search Blueprints</div>
+                    <div class="paper-authors">Diogen Babuc*; Teodor-Florin Fortiş</div>
+                </div>
+                
+                <div class="paper-presentation">
+                    <div class="paper-title">Voices Between Lines: Interpretable Labeling of Mental Health Minority Topics with Seed Guidance and LLMs</div>
+                    <div class="paper-authors">Seyedeh Fatemeh Ebrahimi*; Jaakko Peltonen</div>
+                </div>
+                
+                <div class="paper-presentation">
+                    <div class="paper-title">A Comparative Study on the Responsible Use of Public LLMs for Self-Diagnosis</div>
+                    <div class="paper-authors">Nikil Sharan Prabahar Balasubramanian, Sagnik Dakshit*</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="session coffee-break">
+            <div class="session-time">10:30 - 11:00</div>
+            <div class="session-title">Coffee Break</div>
+        </div>
+
+        <div class="session">
+            <div class="session-time">11:00 - 11:15</div>
+            <div class="session-title">Paper Presentation (Session 2)</div>
+            <div class="session-details">
+                <div class="paper-presentation">
+                    <div class="paper-title">A Privacy-Centric Approach: Scalable and Secure Federated Learning Enabled by Hybrid Homomorphic Encryption</div>
+                    <div class="paper-authors">Khoa Nguyen; Tanveer Khan*; Antonis Michalas</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="session">
+            <div class="session-time">11:15 - 11:45</div>
+            <div class="session-title">Poster Session</div>
+            <div class="session-details">
+                Interactive poster presentations featuring the following accepted papers:
+                <ul class="papers-list">
+                    <li class="paper-item">
+                        <div class="paper-id">Paper ID: 84</div>
+                        <div class="poster-paper-title">DBSCAN clustering applied to electronic health records' data from patients with glioblastoma</div>
+                        <div class="poster-paper-authors">Davide Chicco*; Luca Oneto</div>
+                    </li>
+                    
+                    <li class="paper-item">
+                        <div class="paper-id">Paper ID: 310</div>
+                        <div class="poster-paper-title">Positive-Unlabeled Learning for User-Centred XAI: a Case Study in Healthcare</div>
+                        <div class="poster-paper-authors">Iris Heerlien*; Selin Çolakhasanoglu; Jeroen Linssen</div>
+                    </li>
+                    
+                    <li class="paper-item">
+                        <div class="paper-id">Paper ID: 337</div>
+                        <div class="poster-paper-title">Challenges in Explaining Pretrained Clinical Text Classifiers</div>
+                        <div class="poster-paper-authors">Kristian Miok*; Matej Klemen; Blaz Skrlj; Marko Robnik-Sikonja</div>
+                    </li>
+                    
+                    <li class="paper-item">
+                        <div class="paper-id">Paper ID: 339</div>
+                        <div class="poster-paper-title">Privacy-Preserving AI-based Glaucoma Referral using Multi-Centric Real-World Data: A Feasibility study</div>
+                        <div class="poster-paper-authors">Filipe Soares*; Telmo Barbosa; João Barbosa-Breda; Luís Abegão Pinto; Carlos Marques-Neves</div>
+                    </li>
+                    
+                    <li class="paper-item">
+                        <div class="paper-id">Paper ID: 347</div>
+                        <div class="poster-paper-title">Gender Prediction from Polish Ethnicity Fundus Images using Foundation Model</div>
+                        <div class="poster-paper-authors">Paweł Niedziółka*; Paweł Zyblewski; Andrzej Grzybowski; Michał Woźniak</div>
+                    </li>
+                    
+                    <li class="paper-item">
+                        <div class="paper-id">Paper ID: 438</div>
+                        <div class="poster-paper-title">Characterizing Publicly Available Tabular Health Data Sets for Responsible Machine Learning</div>
+                        <div class="poster-paper-authors">Mariana Oliveira*; Carlos Soares</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="session">
+            <div class="session-time">11:45 - 12:25</div>
+            <div class="session-title">Keynote 2</div>
+            <div class="session-details">
+                <span class="keynote-speaker">Prof. Paul Monsarrat</span><br>
+                Professor, Université de Toulouse<br>
+                <a href="https://restore-lab.fr/recherche/gotit/paul-monsarrat/" target="_blank">Research Profile</a>
+            </div>
+        </div>
+
+        <div class="session">
+            <div class="session-time">12:25 - 12:55</div>
+            <div class="session-title">Panel Discussion</div>
+        </div>
+
+        <div class="session">
+            <div class="session-time">12:55 - 13:00</div>
+            <div class="session-title">Closing Remarks</div>
+        </div>
+    </div>
+
 </body>
 </html>
